@@ -14,11 +14,11 @@ body{
 }
 .grid-2{
 	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 1%;
+	grid-column-gap: 0;
 }
 .grid-3{
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 1%;
+	grid-column-gap: 0;
 }
 .grid-4{
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -31,15 +31,24 @@ body{
 .grid-6{
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-.line{
-  position: relative;
+.grid-7{
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-.line:after {
-	content: '';
-	width: 100px
-  position: absolute;
-  border-bottom: 2px black solid;
-  transform: translateX(-50%);
+.logo{
+	font-weight: bold;
+	font-size: 1.8em;
+
+}
+hr{
+	vertical-align: middle;
+	width:100px;
+	height: 1px;
+	background-color: black;
+}
+.vertical-text {
+	transform: rotate(-90deg);
+	transform-origin:left top 0;
+	transform-style: preserve-3d;
 }
 /* header section */
 header .container{
@@ -103,12 +112,13 @@ header h3{
 	left:15%;
 }
 header .premises{
-	font-size: 1.5em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	font-size: 1.2em;
 	position: absolute;
 	bottom: 10%;
 	left:15%;
 }
-
 /* locations section */
 #locations h2{
 	margin: 2%;
@@ -133,22 +143,26 @@ header .premises{
 	border-bottom: solid 5px #3570ff;
 	font-weight: bold;
 }
-.vertical-text {
-	transform: rotate(90deg);
-	transform-origin: left top 0;
-}
+
 /* Magazine Style */
 .gallary{
 margin: auto;
 padding: 1%;
 }
 .gallary h2{
-	text-align: center;
-	margin: 10%;
-}
-.gallary h4{
-	text-align: left;
+	text-align:left;
 	margin: 5%;
+}
+.gallary span{
+	text-align: left;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 5%;
+}
+.gallary hr{
+	width:80px;
+	margin-top:15%;
+	float:right;
 }
 .gallary p{
 	margin: 5%;
@@ -207,8 +221,25 @@ padding: 1%;
 /* Services Style */
 .serviceContainer h4{
 	margin: auto 3%;
-text-align: right;
+	text-align: right;
 }
+.img{
+	background-image: url('https://via.placeholder.com/360x400?');
+	width: 360px;
+	height: 400px;
+}
+.textBox{
+	margin-left:10%;
+	width: 80%;
+}
+.textBox h3{
+	text-align: Left;
+}
+.textBox hr{
+	width:50px;
+	margin-top:15%;
+}
+
 /* Search Box Style */
 .searchBox{
 	width: 100%;
@@ -235,5 +266,15 @@ footer{
 }
 footer h5{
 	font-weight: bold;
+	font-size: 1.1em;
+}
+footer .logo{
 	font-size: 1.2em;
+	margin: auto 2%;
+}
+footer .icon{
+	border: 2px solid white;
+	border-radius: 50%;
+	width: 500px;
+  height: 500px;
 }
