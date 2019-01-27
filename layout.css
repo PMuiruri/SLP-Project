@@ -30,10 +30,9 @@ body{
 }
 .grid-6{
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 1%;
 }
-.grid-7{
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
+
 .logo{
 	font-weight: bold;
 	font-size: 1.8em;
@@ -45,9 +44,8 @@ hr{
 	background-color: black;
 }
 .vertical-text {
-	transform: rotate(-90deg);
-	transform-origin:left top 0;
-	transform-style: preserve-3d;
+	writing-mode: tb-rl;
+	transform: rotate(-180deg);
 }
 .flexBox{
 	display: flex;
@@ -77,9 +75,7 @@ header .logo{
 	float: left;
 	top:0;
 }
-header #branding h1{
-	margin: 1%;
-}
+
 header nav{
 	height: 10%;
 	padding: 1% 0;
@@ -105,9 +101,12 @@ header img{
 }
 header h1{
 	font-size: 4em;
-	text-align: center;
-	top: 10%;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 5%;
+	width: 60%;
 	padding: 0 5%;
+	line-height: 1;
 }
 header h3{
 	font-size: 1.2em;
@@ -115,10 +114,15 @@ header h3{
 	margin-left: 10%;
 }
 header .premises{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width:60%;
 	font-size: 1.2em;
 	margin-top: 15%;
+	margin-left: 5%
 }
 /* locations section */
 #locations h2{
@@ -144,10 +148,17 @@ header .premises{
 	border-bottom: solid 5px #3570ff;
 	font-weight: bold;
 }
-#locations hr{
-	margin-top: 2%;
-}
 
+#locations h4{
+	transform: rotate(-90deg);
+	margin-top: 100%;
+}
+.gridLocation{
+	margin: 3% 5%;
+}
+.gridLocation hr{
+	transform: rotate(90deg);
+}
 /* Magazine Style */
 .gallary{
 margin: auto;
@@ -162,6 +173,7 @@ padding: 1%;
 	font-size: 18px;
 	font-weight: bold;
 	margin: 5%;
+	white-space: nowrap;
 }
 .gallary hr{
 	width:80px;
@@ -169,55 +181,66 @@ padding: 1%;
 	float:right;
 }
 .gallary p{
-	margin: 5%;
+	margin: 10% 5%;
 }
 .row {
   display: -ms-flexbox;
   display: flex;
+	display: -webkit-flex;
   -ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 0 4px;
+	flex-grow: 1;
+  flex-shrink: 1;
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 1;
 }
 
 .column {
   -ms-flex: 25%;
+	-webkit-flex:25%;
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
+	flex-grow: 1;
+  flex-shrink: 1;
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 1;
 }
 .item1{
-	background: url("https://via.placeholder.com/360x400?");
-	width: 360px;
-	height:400px;
+	background: url("https://via.placeholder.com/380x400?");
+	width: 330px;
+	height:360px;
 	border: 1px groove black;
 }
 .item2{
-	background: url("https://via.placeholder.com/900x800?");
-	width:900px;
-	height: 800px;
+	background: url("https://via.placeholder.com/820x600?");
+	width:840px;
+	height: 720px;
 	border: 1px groove black;
 }
 .item3{
-	background: url("https://via.placeholder.com/360x400?");
-	width: 360px;
-	height:400px;
+	background: url("https://via.placeholder.com/280x300?");
+	width: 330px;
+	height:360px;
 	border: 1px groove black;
 }
 .item4{
-	background: url("https://via.placeholder.com/630x300?");
-	width: 611px;
+	background: url("https://via.placeholder.com/610x300?");
+	width: 581px;
 	height:300px;
 	border: 1px groove black;
 }
 .item5{
-	background: url("https://via.placeholder.com/630x300?");
-	width: 611px;
+	background: url("https://via.placeholder.com/610x300?");
+	width: 581px;
 	height:300px;
 	border: 1px groove black;
 }
 /* Services Style */
 .serviceContainer h4{
-	margin: auto 3%;
+	margin: 15% 3%;
 	text-align: right;
 }
 .img{
@@ -234,7 +257,10 @@ padding: 1%;
 }
 .textBox hr{
 	width:50px;
-	margin-top:15%;
+	margin-top: 8%;
+}
+.size {
+	margin-right:40%;
 }
 
 /* Search Box Style */
@@ -257,7 +283,7 @@ padding: 1%;
 	padding: auto 10%;
 }
 .searchBox form{
-		padding: 2.5%;
+		padding: 2%;
 		margin:auto 20%;
 }
 .searchBox input[type=text]{
@@ -287,6 +313,10 @@ padding: 1%;
 footer {
 	background-color: #242632;
 	color: white;
+}
+footer h3{
+	width: 50%;
+	font-size: 1.2em;
 }
 footer h5{
 	font-weight: bold;
