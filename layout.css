@@ -191,12 +191,8 @@ padding: 1%;
 	-webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 0 4px;
-	flex-grow: 1;
-  flex-shrink: 1;
-  -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 1;
-}
 
+}
 .column {
   -ms-flex: 25%;
 	-webkit-flex:25%;
@@ -209,19 +205,21 @@ padding: 1%;
   -webkit-flex-shrink: 1;
 }
 .item1{
-	background: url("https://via.placeholder.com/380x400?");
+	background: url("https://via.placeholder.com/330x360?");
 	width: 330px;
 	height:360px;
 	border: 1px groove black;
 }
 .item2{
-	background: url("https://via.placeholder.com/820x600?");
+	background: url("https://via.placeholder.com/840x720?");
 	width:840px;
 	height: 720px;
 	border: 1px groove black;
+	flex-shrink: 1;
+  -webkit-flex-shrink: 1;
 }
 .item3{
-	background: url("https://via.placeholder.com/280x300?");
+	background: url("https://via.placeholder.com/330x360?");
 	width: 330px;
 	height:360px;
 	border: 1px groove black;
@@ -231,12 +229,14 @@ padding: 1%;
 	width: 581px;
 	height:300px;
 	border: 1px groove black;
+
 }
 .item5{
 	background: url("https://via.placeholder.com/610x300?");
 	width: 581px;
 	height:300px;
 	border: 1px groove black;
+
 }
 /* Services Style */
 .serviceContainer h4{
