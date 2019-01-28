@@ -204,39 +204,62 @@ padding: 1%;
   -webkit-flex-grow: 1;
   -webkit-flex-shrink: 1;
 }
+.toppart{
+    width: 1210px;
+    height: 800px;
+}
+.leftside{
+    float: left;
+    width: 360px;
+    height: 800px;
+}
+.rightside{
+    float: right;
+    width: 850px;
+    height: 800px;
+}
+.bottompart{
+    width: 1210px;
+    height: 300px;
+}
 .item1{
 	background: url("https://via.placeholder.com/330x360?");
-	width: 330px;
-	height:360px;
+	width: 360px;
+	height:400px;
 	border: 1px groove black;
 }
 .item2{
 	background: url("https://via.placeholder.com/840x720?");
-	width:840px;
-	height: 720px;
+	width: 850px;
+	height: 800px;
+    float: right;
 	border: 1px groove black;
 	flex-shrink: 1;
   -webkit-flex-shrink: 1;
 }
 .item3{
 	background: url("https://via.placeholder.com/330x360?");
-	width: 330px;
-	height:360px;
+	width: 360px;
+	height:400px;
 	border: 1px groove black;
 }
 .item4{
 	background: url("https://via.placeholder.com/610x300?");
-	width: 581px;
+	width: 605px;
 	height:300px;
 	border: 1px groove black;
 
 }
 .item5{
 	background: url("https://via.placeholder.com/610x300?");
-	width: 581px;
+	width: 605px;
 	height:300px;
 	border: 1px groove black;
 
+}
+.magcontainer{
+    width: 1210px;
+    height: 1100px;
 }
 /* Services Style */
 .serviceContainer h4{
