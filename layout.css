@@ -247,6 +247,7 @@ padding: 1%;
 	background: url("https://via.placeholder.com/610x300?");
 	width: 605px;
 	height:300px;
+    float: left;
 	border: 1px groove black;
 
 }
@@ -254,6 +255,7 @@ padding: 1%;
 	background: url("https://via.placeholder.com/610x300?");
 	width: 605px;
 	height:300px;
+    float: right;
 	border: 1px groove black;
 
 }
