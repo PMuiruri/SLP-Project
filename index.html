@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Landing Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="layout.css">
+	<title>Landing Page</title>
 </head>
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="logo"> LOGO
+			<div class="flexBox">
+				<div class="logo"> LOGO
+				</div>
+				<nav class="navbar">
+					<ul>
+						<li><img src="./images/search.png" alt="search"></li>
+						<li><a href="#search">Search</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#magazine">Magazine</a></li>
+						<li><a href="#locations">Tell us what you need</a></li>
+					</ul>
+				</nav>
 			</div>
-			<nav class="navbar">
-				<ul>
-					<li><img src="./images/search.png" alt="search"></li>
-					<li><a href="#search">Search</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#magazine">Magazine</a></li>
-					<li><a href="#locations">Tell us what you need</a></li>
-				</ul>
-			</nav>
 			<div id="header-text">
 				<h3>Find the best premises for your business</h3>
 				<h1>Office and rental premises in the best urban locations</h1>
@@ -30,190 +34,151 @@
 					<span>Logistics Premises </span>
 					<span><hr></span>
 				</div>
-				<div style="width:10%; float:right;"><img src="./images/chat.png" alt="chat"></div>
+				<div><img src="./images/chat.png" alt="chat"></div>
 			</div>
 		</div>
 	</header>
-	<section id="locations">
-				<div style="padding:10% 5%;">
-					<h1>Can't find what you're looking for? Describe your need for the premises and let us help</h1>
-					<div style="padding:2% 20%;" class="flexBox">
-						<span><a href="#">Go to our office facility scanner</a></span><hr>
-						<span><a href="#">Browse all premises</a></span><hr>
+	<section id="location">
+		<div class="location-container">
+			<h2>Office Premises for your needs</h2>
+			<div>
+				<div class="flexBox">
+					<span class="vertical-flex">
+						<p class="vertical-text">Otaniemi</p>
+						<hr class="vertical-line">
+					</span>
+					<div class="">
+						<img src="./images/location1.jpg" alt="facitlity 1">
+						<h4>Miestentie 3, Espoo</h4>
+					</div>
+					<div class="vertical-flex">
+						<p class="vertical-text">Tikkurila</p>
+						<hr class="vertical-line">
+					</div>
+					<div class="">
+						<img src="./images/location2.jpg" alt="facitlity 1">
+						<h4>Vaaritehtaankatu 8, Vantaa</h4>
+					</div>
+					<div class="vertical-flex">
+						<p class="vertical-text">Leppävaara</p>
+						<hr class="vertical-line">
+					</div>
+					<div class="">
+						<img src="./images/location3.jpg" alt="facitlity 1">
+						<h4>Esikunnankatu 1, Espoo</h4>
 					</div>
 				</div>
+			</div>
+		</section>
+		<section class="locations">
+			<div>
+				<h1>Can't find what you're looking for?</h1>
+				<h1>Describe your need for the premises and let us help</h1>
+				<div class="flexBox">
+					<span><a href="#">Go to our office facility scanner</a></span><hr>
+					<span><a href="#">Browse all premises</a></span><hr>
+				</div>
+			</div>
 		</section>
 		<section id="magazine">
-			<div class="gridStyle gallary magcontainer">
-                <div class="toppart">
-                    <div class="leftside">
-                        <div class="item1">
-                            <h2>Leppävaara's remarkable growth draws in business and residents</h2>
-                            <div class="gridStyle grid-4">
-                                <hr>
-                                <span>Inspirations</span>
-                            </div>
-                        <p style="margin-top:45%;">4 october</p>
-                        </div>
-                        <div class="item3">
-                            <h2>Shopping center app benefits customers and retailers</h2>
-                            <div class="gridStyle grid-3">
-                                <hr>
-                                <span>Case Stories</span>
-                            </div>
-                            <p style="margin-top:45%;">1 November</p>
-                        </div>
-                    </div>
-                    <div class="rightside">
-                        <div class="item2">
-                            <h2>Deloitte's value-driven approach to business - a focus on sustainable premises</h2>
-                            <div class="gridStyle grid-7">
-                                <hr>
-                                <span>Case Stories</span>
-                            </div>
-                            <p style="margin-top:58%;">15 November</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottompart">
-                    <div class="item4">
-                        <h2>Company's Kai Aejmelaeus: business premises have become a competitve factor </h2>
-                        <div class="gridStyle grid-4">
-                            <hr>
-                            <span>Future Solutions</span>
-                        </div>
-                        <p>1 October</p>
-                    </div>
-                    <div class="item5">
-                        <h2>Nueorscientist Minna Huotilainen: Take a productive break!</h2>
-                        <div class="gridStyle grid-5">
-                            <hr>
-                            <span>Inspirations</span>
-                        </div>
-                        <p>3 October</p>
-                    </div>
-                </div>
+			<div class="masonary">
+				<div class="column">
+				<div class="item1">
+					<p>Leppävaara's remarkable growth draws in business and residents</p>
+					<div class="">
+						<hr>
+						<span>Inspirations</span>
+					</div>
+					<p>4 october</p>
+				</div>
+				<div class="item2">
+					<p>Shopping center app benefits customers and retailers</p>
+					<div class="">
+						<hr>
+						<span>Case Stories</span>
+					</div>
+					<p>1 November</p>
+				</div>
+				</div>
+				<div class="item3">
+					<p>Deloitte's value-driven approach to business - a focus on sustainable premises</p>
+					<div class="">
+						<hr>
+						<span>Case Stories</span>
+					</div>
+					<p>15 November</p>
+				</div>
+				<div class="item4">
+					<p>Company's Kai Aejmelaeus: business premises have become a competitve factor </p>
+					<div class="">
+						<hr>
+						<span>Future Solutions</span>
+					</div>
+					<p>1 October</p>
+				</div>
+				<div class="item5">
+					<p>Nueorscientist Minna Huotilainen: Take a productive break!</p>
+					<div class="">
+						<hr>
+						<span>Inspirations</span>
+					</div>
+					<p>3 October</p>
+				</div>
+			</div>
+		</section>
+		<section class="explore">
+			<div class="flexBox">
+				<span class="vertical-flex">
+					<p class="vertical-text">Office Premises</p>
+					<hr class="vertical-line">
+				</span>
+				<p class="vertical-text">Modern Ruoholahti</p>
+				<div class="imgBox">
+					<img src="./images/table.jpg" alt="table">
+				</div>
+				<span class="exploreBox">
+				<p>Explore</p>
+				<hr>
+			</span>
 			</div>
 		</section>
 		<section id="services">
-			<div class="serviceContainer">
-				<div class="gridStyle grid-3">
-					<div class="img">
+			<div class="serviceContainer ">
+					<div class="container">
+					<div class="box">
 						<div class="textBox">
-							<h3>Company Plc: Shopping center forum upgraded its BREEAM environmental rating to Very Good</h3>
-							<div class="row size">
-								<span>Press release</span>
+							<p>Company Plc: Shopping center forum upgraded its BREEAM environmental rating to Very Good</p>
+							<div class="flexBox size">
 								<hr>
+								<span>Press release</span>
 							</div>
-							<p style="margin-top:60%;">15 November</p>
+							<p>15 November</p>
 						</div>
 					</div>
-					<div class="img">
+					<div class="box">
 						<div class="textBox">
-							<h3>Sustainability Review 2017 published</h3>
-							<div class="row size">
-								<span>Press release</span>
+							<p>Sustainability Review 2017 published</p>
+							<div class="flexBox size">
 								<hr>
+								<span>Press release</span>
 							</div>
-							<p style="margin-top:70%;">15 November</p>
+							<p>15 November</p>
 						</div>
 					</div>
-					<div class="img">
+					<div class="box">
 						<div class="textBox ">
-							<h3>Publishing of Company's Half Year Financial Report January to June 2018</h3>
-							<div class="row size">
-								<span>Press release</span>
+							<p>Publishing of Company's Half Year Financial Report January to June 2018</p>
+							<div class="flexBox size">
 								<hr>
+								<span>Press release</span>
 							</div>
-							<p style="margin-top:60%;">15 November</p>
+							<p>15 November</p>
 						</div>
 					</div>
-				</div>
 			</div>
+		</div>
+		</section>
 
-		</section>
-		<section id="search">
-			<div class="container">
-				<div class="searchBox">
-					<h2 class="">Seach For Premises</h2>
-					<h4>Company offers a range of comfortable and effective business premises tailored according to your needs</h4>
-					<form>
-						<input type="text" placeholder="Search for a City, Area or Address">
-						<select name="size"><option value="All Sizes"> All Sizes</option></select>
-						<input type="submit" value="Check Available spaces"></input>
-					</form>
-				</div>
-				<div class="gridStyle grid-3" style="width:80%; margin:5% 10%;">
-					<div>
-						<h4>Customer Service Center</h4>
-						<div class="row">
-							<span>+358 20 355 6677</span>
-							<hr>
-						</div>
-					</div>
-					<div>
-						<h4>Chat</h4>
-						<div class="row">
-							<span>Mon-Fri at 8:30 - 16:30 </span>
-							<hr>
-						</div>
-					</div>
-					<div>
-						<h4>Extranet</h4>
-						<div class="row">
-							<span>Business Premises and news </span>
-							<hr>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer id="footer" >
-			<div class="gridStyle grid-2">
-				<div>
-					<h3>Read the most innovative property stories in Company newsletter</h3>
-					<p><u>Description of the Register</u></p>
-				</div>
-				<div>
-					<form>
-						<div class="row">
-							<input type="text" placeholder="Enter your email"></input>
-							<input type="submit" value="submit"></input>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="gridStyle grid-5">
-				<div>
-					<h5><strong>Company</strong></h5>
-					<p>Korkeavuorenkatu 45 <br/> P.o Box 940 <br/> 00100 Helsinki<br/> tel. +358 20 43131 <br/> fax +358 20 431 3333</p>
-				</div>
-				<div>
-					<h5> <strong>Company</strong></h5>
-					<p>Responsibility <br/> Strategy <br/> Organization <br/> Company in brief <br> Financial Information <br/> Mission and Values</p>
-				</div>
-				<div>
-					<h5><strong>Customers</strong></h5>
-					<p>Property Search <br/> Lease guide <br/> Services </p>
-				</div>
-				<div>
-					<h5><strong>Media</strong></h5>
-					<p>Releases <br/> Media-Materials <br/> Magazine <br/> Contact Us</p>
-				</div>
-				<div>
-					<h5><strong>Webpage</strong></h5>
-					<p>Cookie Notification <br/> Description of the Register</p>
-				</div>
-			</div>
-			<div>
-				<span class="logo">LOGO</span>
-				<span style="opacity:0.6;">&copy 2019 Company</span>
-				<span style="opacity:0.6; margin-left:70%;">
-					<img src="./images/twitter.png" alt="">
-					<img src="./images/facebook.png" alt="">
-					<img src="./images/linkedin.png" alt="">
-				</span>
-			</div>
-		</footer>
+
 	</body>
-	</html>
+	</html>ta
