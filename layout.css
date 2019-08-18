@@ -78,6 +78,7 @@ header .container{
 }
 header .flexBox{
 	margin-top: 2%;
+  width: 100%;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -318,13 +319,36 @@ header img{
 	margin-right:40%;
 	align-items: center;
 }
-@media screen and (max-width: 600px) {
-  body{
+@media screen and (max-width: 720px) {
+  body {
     display: block;
   }
-
-  a {
-    float: none;
-    width: 100%;
+.flexBox{
+  display: block;
+}
+header h1{
+  width: 100%;
+}
+.vertical-flex{
+  height: 0px;
+}
+.imgBox img{
+  width: 100vw;
+}
+.location-container img{
+  width: 100vw;
+  height: 100vh;
+}
+.box{
+  width: 80vw;
+  height: 100vh;
+  padding: 2%;
+  margin: 2%;
+}
+hr{
+    visibility: hidden;
+  }
+  .vertical-text{
+    visibility: hidden;
   }
 }
