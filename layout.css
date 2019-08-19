@@ -116,6 +116,7 @@ header ul, li{
 }
 header img{
 	padding: auto;
+  margin: 0;
 }
 header h1{
 	font-size: 4em;
